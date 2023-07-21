@@ -170,20 +170,15 @@ body {
   .header {
     align-items: center;
     justify-content: center;
-    height: 180px;
   }
 
   .logo {
     width: 200px;
   }
 
-  .une,
-  .menu {
-    margin-top: 10px;
-  }
-
   .logo img {
     width: 180px;
+    margin: 10px 0 0 15px;
   }
 
   .une img {
@@ -201,13 +196,13 @@ body {
   .qrcode {
     width: 150px;
     height: 200px;
-    margin: 10px ;
+    margin: 10px;
   }
 
   .dados {
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;
   }
 
   .docs {
