@@ -110,7 +110,13 @@ body {
   background-image: url(../images/ygor.jpeg);
   background-position: center center;
   background-size: cover;
+}
 
+.qr {
+  background-image: url(../images/qr-ygor.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
 }
 
 /* DADOS */

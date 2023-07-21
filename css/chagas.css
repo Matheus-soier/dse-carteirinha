@@ -106,6 +106,13 @@ body {
   justify-content: center;
 }
 
+.qr {
+  background-image: url(../images/qr-chagas.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+}
+
 .foto {
   background-image: url(../images/chagas.jpeg);
   background-position: center center;
