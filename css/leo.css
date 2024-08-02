@@ -5,7 +5,6 @@
 :root {
   --bg-color: #1D76DF;
   --fontfamily: 'Ubuntu', sans-serif;
-  ;
 }
 
 body {
@@ -15,33 +14,34 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--bg-color);
-}
-
-
-.container {
-  flex-direction: column;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 100vh;
+}
+
+.container {
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 450px;
+  height: auto;
   background-color: var(--bg-color);
 }
 
 /* HEADER */
 .header {
-  max-width: 450px;
-  width: 100vw;
+  width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
 }
 
 .logo {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 .une {
@@ -61,20 +61,21 @@ body {
 }
 
 .logo img {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   margin: 10px 0 0 30px;
-  height: min-content;
+  height: auto;
 }
 
 .une img {
   width: 70px;
-  height: min-content;
+  height: auto;
 }
 
 /* CORPO */
 .main {
+  width: 100%;
   max-width: 450px;
-  width: 100vw;
   height: 300px;
   display: flex;
   align-items: center;
@@ -99,13 +100,6 @@ body {
   flex: 1;
 }
 
-.qr {
-  background-image: url(../images/qr-leo.png);
-  background-size: cover;
-  background-position: center center;
-  border-radius: 20px;
-}
-
 .code {
   border-radius: 0 0 20px 20px;
   height: 40px;
@@ -113,11 +107,17 @@ body {
   justify-content: center;
 }
 
+.qr {
+  background-image: url(../images/qr-chagas.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+}
+
 .foto {
   background-image: url(../images/avatar-geral.jpg);
   background-position: center center;
   background-size: cover;
-
 }
 
 /* DADOS */
@@ -130,8 +130,9 @@ body {
 
 .docs {
   background-color: #fff;
-  width: 380px;
-  height: min-content;
+  width: 90%;
+  max-width: 380px;
+  height: auto;
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 20px;
@@ -142,7 +143,7 @@ body {
 
 .certificado {
   height: 170px;
-  width: 100vw;
+  width: 100%;
   max-width: 450px;
   display: flex;
   justify-content: center;
@@ -170,8 +171,7 @@ body {
   .container {
     width: 100%;
     max-width: 100%;
-    height: min-content;
-    /* Adicione um espaçamento na lateral para melhor visualização em telas menores */
+    height: auto;
   }
 
   .header {
@@ -180,16 +180,20 @@ body {
   }
 
   .logo {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
   }
 
   .logo img {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
     margin: 10px 0 0 15px;
+    height: auto;
   }
 
   .une img {
     width: 50px;
+    height: auto;
   }
 
   .main {
